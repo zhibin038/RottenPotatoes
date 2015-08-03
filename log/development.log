@@ -3146,3 +3146,26 @@ Processing by MoviesController#index as HTML
   [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
   Rendered movies/index.html.haml within layouts/application (5.1ms)
 Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for ::1 at 2015-08-02 19:53:12 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (19.9ms)
+Completed 200 OK in 512ms (Views: 492.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/8" for ::1 at 2015-08-02 19:53:19 -0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered movies/show.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 63ms (Views: 45.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for ::1 at 2015-08-02 19:53:22 -0700
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.haml within layouts/application (23.4ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.3ms)
