@@ -9,7 +9,6 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.html.haml by default
   end
   def new
-    
   end
   # in movies_controller.rb
   def create
